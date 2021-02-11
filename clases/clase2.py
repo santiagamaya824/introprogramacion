@@ -1,3 +1,4 @@
+#estos son booleans que sirven para decir verdadero o falso
 pruebav = True
 pruebaf = False
 print (pruebaf)
@@ -17,6 +18,11 @@ print (isMayorEstatura)
 print ("#"*15,"peso diferente 84", "#"*15)
 isPesoDiferente = peso != 84
 print( isPesoDiferente)
+apellido = "amaya"
+isApellido = apellido in nombre
+print ("#"*15,"apellido", "#"*15)
+print( isApellido)
+
 
 
 
