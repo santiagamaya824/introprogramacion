@@ -4,7 +4,7 @@ pregunta_estatura = "cuanto mides en mts? : "
 mensaje_bienvenida = " hola como estas? voy a calcular tu IMC"
 mensaje_despedida = "tu IMC es ..."
 
-#......emtrada de codigo......#
+#......entrada de codigo......#
 print (mensaje_bienvenida)
 peso = float (input (pregunta_peso))
 estatura = float (input (pregunta_estatura))
