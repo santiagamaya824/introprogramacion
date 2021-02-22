@@ -6,17 +6,17 @@ mensaje_bienvenida = "bienvenido al codigo"
 mensaje_mayorA = "el numeroA es mayor"
 mensaje_mayorB = "el numeroB es mayor"
 mensaje_igual = "los numeros son iguales"
-numeroA = 3
-numeroB = 3
+numeroA = 5
+numeroB = 4
 
 #......entrada al codigo.....#
 print(mensaje_bienvenida)
 isMayorA = numeroA > numeroB
-isMenorB = numeroA < numeroB
+isMayorB = numeroA < numeroB
 
 if(isMayorA):
     print(mensaje_mayorA)
-elif(isMenorB): 
+elif(isMayorB): 
     print(mensaje_mayorB)
 else:
     print(mensaje_igual)
