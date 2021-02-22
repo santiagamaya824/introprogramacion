@@ -55,44 +55,51 @@ print ("#"*15,"punto numero 3", "#"*15)
 # preguntas para personas que ingresaron a la universidad
 #.....constantes....#
 pregunta_año = "ingresa el año actual : "
-pregunta_año_ingreso_universidad = "ingresa el año en que entraste a la universidad : "
-pregunta_año_grados = "ingresa el año en el cual debes de graduarte : "
-mensaje_años_que_faltan = "años faltan para graduarte"
+pregunta_año_ingreso_universidad = "ingresa el año en que entraste o quieres ingresar a la universidad : "
+mensaje_años_iguales = "los años que ingresaste son iguales"
 mensaje_años_que_pasaron = "años han pasado desde el ingreso a la universidad"
 
 #...entrada codigo...#
 Año = int(input(pregunta_año))
 IngresoUniversidad = int(input(pregunta_año_ingreso_universidad))
-GradoUniversidad = int(input(pregunta_año_grados))
-isAñosQuePasaronDesdeIngreso = IngresoUniversidad - Año
-isAñosQueFaltanParaGrados = GradoUniversidad - Año
 
-if(isAñosQuePasaronDesdeIngreso):
-    print(Año - IngresoUniversidad, mensaje_años_que_pasaron)
+if(Año > IngresoUniversidad):
+    print(Año - IngresoUniversidad,mensaje_años_que_pasaron)
 
-if(isAñosQueFaltanParaGrados):
-    print(GradoUniversidad - Año, mensaje_años_que_faltan)
+elif(Año < IngresoUniversidad):
+    print(IngresoUniversidad - Año, "años faltan para estar en la universidad")
 
+else:
+    print(mensaje_años_iguales)
 print ("#"*15,"punto numero 4", "#"*15)
-
 
 #PUNTO 4
 #......constantes.....#
 pregunta_distancia = "escribe una distancia en centimetros : "
-mensaje_kilometros = "distancia en kilometros"
-mensaje_metros = "distancia en metros"
-mensaje_centimetros = "distancia en centimetros"
+pregunta_unidad = "escriba a que unidad quiere convertir la distancia : "
+mensaje_kilometros = "es la distancia en kilometros"
+mensaje_metros = "es la distancia en metros"
+mensaje_milimetros = "es la distancia en milimetros"
+mensaje_error = "tuviste un error, intentalo de nuevo"
 
 #.....entrada codigo.....#
 distancia = float (input(pregunta_distancia))
-iskilometros = distancia * 10**-5
-isMetros = distancia * 10**-2
+unidad = input(pregunta_unidad)
+kilometros = distancia * 10**-5
+metros = distancia * 10**-2
+milimetros = distancia * 10
 
-if(iskilometros):
-    print(distancia * 10**-5,mensaje_kilometros)
+if(unidad == "kilometros"):
+    print(kilometros,mensaje_kilometros)
 
-if(isMetros):
-    print(distancia * 10**-2, mensaje_metros )
+elif(unidad == "metros"):
+    print(metros, mensaje_metros)
+
+elif(unidad == "milimetros"):
+    print(milimetros,mensaje_milimetros)
+
+else:
+    print(mensaje_error)
 
 
 
