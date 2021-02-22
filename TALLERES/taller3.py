@@ -68,7 +68,7 @@ isAñosQuePasaronDesdeIngreso = IngresoUniversidad - Año
 isAñosQueFaltanParaGrados = GradoUniversidad - Año
 
 if(isAñosQuePasaronDesdeIngreso):
-    print(IngresoUniversidad - Año, mensaje_años_que_pasaron)
+    print(Año - IngresoUniversidad, mensaje_años_que_pasaron)
 
 if(isAñosQueFaltanParaGrados):
     print(GradoUniversidad - Año, mensaje_años_que_faltan)
@@ -87,7 +87,6 @@ mensaje_centimetros = "distancia en centimetros"
 distancia = float (input(pregunta_distancia))
 iskilometros = distancia * 10**-5
 isMetros = distancia * 10**-2
-resultado = ""
 
 if(iskilometros):
     print(distancia * 10**-5,mensaje_kilometros)
