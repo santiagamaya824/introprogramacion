@@ -33,7 +33,7 @@ mensaje_Adulto_Mayor = "eres de la tercera edad"
 #.....entrada condigo....#
 Edad = int(input(pregunta_edad))
 isMenorEdad = Edad < 18
-isJoven = Edad >= 18 and Edad < 25
+isJoven = Edad >= 18 and Edad < 26
 isAdulto = Edad >= 26 and Edad < 60
 isAdultoMayor = Edad >= 60
 resultado = ""
