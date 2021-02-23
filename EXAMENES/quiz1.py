@@ -7,6 +7,7 @@ mensaje_despedida = "estos fueron los resultados de tu consulta, muchas gracias"
 
 #......entrada codigo......#
 print(mensaje_bienbenida)
+print ("#"*15,"trigliceridos", "#"*15)
 trigliceridos = float(input(pregunta_triglicerido))
 print("resultado de trigliceridos : ")
 isOptimo = trigliceridos < 150
@@ -23,6 +24,7 @@ elif(isAlto):
 else:
     print("cuidado, tus trigliceridos estan muy altos, corres peligro")
 
+print ("#"*15,"homocisteina", "#"*15)
 homocisteina = float(input(pregunta_homocisteina))
 print("resultado de homocisteina : ")
 isOptimoH = homocisteina >= 2 and homocisteina < 15
