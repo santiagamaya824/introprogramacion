@@ -1,3 +1,4 @@
+#juego con while e if 
 #....constantes....#
 saludo = "bienbenido, juguemos"
 pregunta_numero = "en  este juego debes aceptar un numero q va del 1 al 10, lo puedes intentar las veces que quieras....exitos, infresa tu numero : "
