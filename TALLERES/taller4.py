@@ -1,6 +1,9 @@
 #---- taller numero 4 -----#
+
 listaDolares = [20000,30000,4000,2500,1000,7600]
+
 #----preguntas-----#
+
 preguntaNumero  = """Ingrese alguna de estas opciones
     1.Hacer conversión de dolares a pesos o euros
     2.mostar lista clasificacion de ingresos
@@ -15,7 +18,6 @@ preguntaMoneda  = """
 """
 preguntaIngreso = " cual es tu ingreso mensual en dolares : "
 
-
 #---convercion----#
 
 listaPesos = []
@@ -26,7 +28,6 @@ listaEuros = []
 for elemento in listaDolares:
     conversor = round (elemento * 0.84)
     listaEuros.append (conversor)
-
 
 #---entradas---#
 print("bienvenido al codigo")
