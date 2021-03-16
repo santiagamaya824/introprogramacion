@@ -22,7 +22,7 @@ preguntaIngreso = " cual es tu ingreso mensual en dolares : "
 
 listaPesos = []
 for elemento in listaDolares :
-    conversor = round( elemento * 3.700)
+    conversor = round(elemento * 3.700)
     listaPesos.append (conversor)
 listaEuros = []
 for elemento in listaDolares:
