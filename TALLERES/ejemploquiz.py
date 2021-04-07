@@ -1,16 +1,16 @@
 # ---- Preguntas
-preguntaNumero  =  '' 'Ingrese alguna de estas opciones
+preguntaNumero  =  """Ingrese alguna de estas opciones
     1.Hacer conversión de pesos a dólares o euros
     2.Agrege un valor a la lista de pesos
     3.Mostrar valor más alto, más bajo y promedio
     4.Eliminar elemento de la lista
     5. Salir
-'' '
-preguntaMoneda  =  '' '
+"""
+preguntaMoneda  =  """
     C- Mostrar original en pesos colombiano
     D- Mostrar en Dolares
     E- Mostrar en Euros
-'' '
+"""
 preguntarNumero  =  'Ingrese un valor en COP:'
 preguntaBorrarCoordenada  =  'Ingrese la posición que desea borrar:'
 # ---- Mensajes --- #
@@ -39,7 +39,7 @@ for  elemento  in  listaPesos :
 
 
 opcionEscogida  =  int ( input ( preguntaNumero ))
-while ( opcionEscogida  ! = 5 ):
+while ( opcionEscogida  != 5 ):
     # --------- Opcion1 --------- #
     if ( opcionEscogida  ==  1 ):
         opcionMoneda  =  entrada ( preguntaMoneda )
@@ -52,7 +52,7 @@ while ( opcionEscogida  ! = 5 ):
         elif ( opcionMoneda  ==  'E' ):
             imprimir ( mensajeEuros )
             imprimir ( listaEuros )
-        otra cosa :
+        else :
             imprimir ( mensajeErrorEntrada )
     # --------- Opcion2 --------- #
     elif ( opcionEscogida  ==  2 ):
