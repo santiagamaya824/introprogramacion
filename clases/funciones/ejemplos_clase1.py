@@ -1,5 +1,5 @@
 guardar  =  imprimir ( 'hola' )
-imprimir ( guardar )
+print() ( guardar )
 
 guardar  =  redondo ( 14.2534897 , 2 )
 imprimir ( guardar )
