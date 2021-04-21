@@ -30,9 +30,12 @@ class Estudiante():
         estudio {self.carrera} en la universidad CES
         estoy en el {self.semestre} semestre
         """)
+    def tiempoEstudio(self,materia,tiempo):
+        print(f"voy a estudiar{materia} por {tiempo}horas")
 
 print("estudiante 1")
-Estudiante(20, "santiago", 12345, "ingenieria biomedica", 5)
+estudiante = Estudiante(20, "santiago", 12345, "ingenieria biomedica", 5)
+tiempo = tiempoEstudio ("programacion",20)
 
 class Nutricionista():
     def __init__(self,edadEntrada,nombreEntrada,universidadEntrada):
@@ -52,15 +55,13 @@ class Nutricionista():
 print("nutricionista")
 Nutricionista(28, "juan", "CES")
 
-Peso = float(input("cual es su peso en kg? : "))
-Estatura = float (input("cual es su estatura en metros? : "))
-
-print("tu imc es {self.imc}")
-
 class Canguro():
     def __init__(self,edadEntrada,idEntrada,nombreEntrada):
         self.edad = edadEntrada
         self.id = idEntrada
         self.nombre = nombreEntrada
+    def saltos (self,numerodesaltos):
+        for elemento in range(saltos):
+            print (f"soy un canguro y he dado",{elemento + 1})
 
-
+salto = saltos(3)
