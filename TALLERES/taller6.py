@@ -31,29 +31,31 @@ class Estudiante():
         estoy en el {self.semestre} semestre
         """)
     def tiempoEstudio(self,materia,tiempo):
-        print(f"voy a estudiar{materia} por {tiempo}horas")
+        print(f"voy a estudiar{materia} por {tiempo} horas")
 
 print("estudiante 1")
 estudiante = Estudiante(20, "santiago", 12345, "ingenieria biomedica", 5)
-tiempo = tiempoEstudio ("programacion",20)
+estudiante.tiempoEstudio("calculo", 20) 
 
 class Nutricionista():
     def __init__(self,edadEntrada,nombreEntrada,universidadEntrada):
         self.edad = edadEntrada
         self.nombre = nombreEntrada
         self.universidad = universidadEntrada
-        self.estatura = Estatura
-        self.peso = Peso
-        self.imc = Peso/(Estatura**2)
         print(f"""
         hola mi nombre es {self.nombre}
         tengo {self.edad} años
         soy nutricionista egresado de la universidad {self.universidad} 
         voy a calcular tu imc, porfavor responde las siguientes preguntas
         """)
+    def IMC (self,peso,estatura):
+        print(f"hola soy {self.nombre} y voy a medir el imc")
+        imc = peso/(altura**2)
+
 
 print("nutricionista")
-Nutricionista(28, "juan", "CES")
+nutricionista = Nutricionista(28, "juan", "CES")
+nutricionista.IMC(68, 1.72)
 
 class Canguro():
     def __init__(self,edadEntrada,idEntrada,nombreEntrada):
@@ -61,7 +63,12 @@ class Canguro():
         self.id = idEntrada
         self.nombre = nombreEntrada
     def saltos (self,numerodesaltos):
-        for elemento in range(saltos):
-            print (f"soy un canguro y he dado",{elemento + 1})
+        for elemento in range(salto):
+            print (f"""hola soy un canguro, me llamo {self.nombre} 
+            mi id es {self.id} tengo {self.edad} años 
+            y he dado {elemento + 1} saltos""")
 
-salto = saltos(3)
+print("canguro")
+canguro = Canguro(20,123456,"victor")
+canguro.salto (6)
+
